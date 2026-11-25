@@ -39,6 +39,39 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "無料で使えますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "はい、無料です。広告もアプリ内課金もありません。" }
+    },
+    {
+      "@type": "Question",
+      "name": "ひとりでも使えますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "使えます。はじめに「ひとりで使う」を選べば、タイマーで計って記録し、連続日数とトロフィーで勉強の習慣づくりができます。家族とつなぐのは、あとからでも、使わなくてもかまいません。" }
+    },
+    {
+      "@type": "Question",
+      "name": "アカウント登録は必要ですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "必要ありません。登録しなくても、すべての機能を使えます。機種変更のときに記録を引き継ぎたい場合だけ、任意でメールアドレスとパスワードで会員登録できます（アプリ内からいつでも削除できます）。" }
+    },
+    {
+      "@type": "Question",
+      "name": "子どもに持たせても安心ですか？記録はどこに保存されますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "公開のフィードや知らない人とつながる機能、広告はありません。家族コードも会員登録も使わない場合、記録は端末の中だけに保存されます。家族コードでつないだ場合は、家族で同じ記録を見るために、その家族の端末だけが読み書きできる形でサーバー（Google の Firebase）に保存します。保護者の画面は計算問題に答えないと開けません。くわしくはアプリ内のプライバシーポリシーをご覧ください。" }
+    },
+    {
+      "@type": "Question",
+      "name": "Android でも使えますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "使えます。Google Play から無料でダウンロードできます。ただし「こどもが勉強したら知らせる」通知は、いまは iPhone だけの対応です（Android は準備中）。" }
+    }
+  ]
+}
+</script>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -145,6 +178,16 @@ section{padding-block:56px}
 .stat{background:rgba(255,255,255,.14);border-radius:18px;padding:26px}
 .stat b{font-family:var(--display);font-size:2rem;font-weight:900;color:#fff;display:block;line-height:1.2}
 .stat small{color:rgba(255,255,255,.9);font-size:.86rem}
+
+/* faq */
+.faq{max-width:760px;margin:0 auto;display:grid;gap:12px}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:0 20px}
+.faq summary{cursor:pointer;list-style:none;font-family:var(--display);font-weight:700;font-size:1.02rem;padding:18px 28px 18px 0;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);color:var(--accent);font-size:1.3rem;font-weight:700}
+.faq details[open] summary::after{content:"−"}
+.faq summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.faq details p{color:var(--muted);font-size:.95rem;padding-bottom:18px}
 
 /* cta */
 .cta{text-align:center;padding-block:64px}
@@ -276,6 +319,35 @@ footer{border-top:1px solid var(--line);padding-block:28px 40px;color:var(--mute
       <b>5家族〜</b>
       <small>少しずつ、確実に広がっています。</small>
     </div>
+  </div>
+</section>
+
+<section id="faq" class="wrap">
+  <div class="head">
+    <span class="eyebrow">よくある質問</span>
+    <h2>勉強の習慣アプリ、はじめる前の疑問に。</h2>
+  </div>
+  <div class="faq">
+    <details>
+      <summary>無料で使えますか？</summary>
+      <p>はい、無料です。広告もアプリ内課金もありません。</p>
+    </details>
+    <details>
+      <summary>ひとりでも使えますか？</summary>
+      <p>使えます。はじめに「ひとりで使う」を選べば、タイマーで計って記録し、連続日数とトロフィーで勉強の習慣づくりができます。家族とつなぐのは、あとからでも、使わなくてもかまいません。</p>
+    </details>
+    <details>
+      <summary>アカウント登録は必要ですか？</summary>
+      <p>必要ありません。登録しなくても、すべての機能を使えます。機種変更のときに記録を引き継ぎたい場合だけ、任意でメールアドレスとパスワードで会員登録できます（アプリ内からいつでも削除できます）。</p>
+    </details>
+    <details>
+      <summary>子どもに持たせても安心ですか？記録はどこに保存されますか？</summary>
+      <p>公開のフィードや知らない人とつながる機能、広告はありません。家族コードも会員登録も使わない場合、記録は端末の中だけに保存されます。家族コードでつないだ場合は、家族で同じ記録を見るために、その家族の端末だけが読み書きできる形でサーバー（Google の Firebase）に保存します。保護者の画面は計算問題に答えないと開けません。くわしくはアプリ内のプライバシーポリシーをご覧ください。</p>
+    </details>
+    <details>
+      <summary>Android でも使えますか？</summary>
+      <p>使えます。Google Play から無料でダウンロードできます。ただし「こどもが勉強したら知らせる」通知は、いまは iPhone だけの対応です（Android は準備中）。</p>
+    </details>
   </div>
 </section>
 
