@@ -1,0 +1,6 @@
+# 注意：検索エンジンが読むのはドメイン直下の https://is-inn.github.io/robots.txt だけ（is-inn.github.io リポジトリ）。
+# このファイルは控え。
+User-agent: *
+Allow: /
+
+Sitemap: https://is-inn.github.io/manabi-lp/sitemap.xml
