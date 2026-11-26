@@ -370,5 +370,23 @@ footer{border-top:1px solid var(--line);padding-block:28px 40px;color:var(--mute
   <span>iPhone・Android・© 2026 まなびチーム</span>
 </footer>
 
+<script>
+/* 流入元(?s=ig / ?s=x / ?utm_source=...)をストアリンクの計測に引き継ぐ。無指定はlpのまま */
+(function(){
+  try{
+    var q=new URLSearchParams(location.search);
+    var s=(q.get('s')||q.get('utm_source')||'').toLowerCase().replace(/[^a-z0-9_]/g,'').slice(0,16);
+    if(!s||s==='lp')return;
+    var ct={instagram:'ig',ig:'ig',x:'x',twitter:'x'}[s]||s;
+    var play={ig:'instagram',instagram:'instagram',x:'x',twitter:'x'}[s]||s;
+    document.querySelectorAll('a[href]').forEach(function(a){
+      var h=a.getAttribute('href');if(!h)return;
+      if(h.indexOf('apps.apple.com')>-1){a.setAttribute('href',h.replace(/([?&]ct=)lp\b/,'$1'+ct));}
+      else if(h.indexOf('play.google.com')>-1){a.setAttribute('href',h.replace(/utm_source(%3D|=)lp\b/,'utm_source$1'+play));}
+    });
+  }catch(e){}
+})();
+</script>
+
 </body>
 </html>
