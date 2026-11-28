@@ -39,6 +39,13 @@
 <script type="application/ld+json">
 { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "まなびチーム", "item": "https://is-inn.github.io/manabi-lp/" }, { "@type": "ListItem", "position": 2, "name": "読みもの", "item": "https://is-inn.github.io/manabi-lp/articles.html" }, { "@type": "ListItem", "position": 3, "name": "勉強が続かない…を変える、小さな習慣づくり3つのコツ", "item": "https://is-inn.github.io/manabi-lp/habit.html" } ] }
 </script>
+<script type="application/ld+json">
+{ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+  { "@type": "Question", "name": "勉強が続かないのは、やる気や性格のせいですか？", "acceptedAnswer": { "@type": "Answer", "text": "かならずしもそうではありません。勉強を「がんばること」ではなく「いつもの流れ」にする工夫で、続けやすさは変わります。1日10分など小さく始め、夕ごはんのあとなど毎日かならずする行動のあとに続けると決めると、いつやるか迷う時間が減ります。" } },
+  { "@type": "Question", "name": "どのくらいの量から始めればいいですか？", "acceptedAnswer": { "@type": "Answer", "text": "疲れている日でもできる量にしぼるのがおすすめです。「1日10分」「問題集を1ページ」でかまいません。短くても「今日もやった」を積み重ねると、始めるハードルが下がります。物足りなくなったら少しずつ増やせば十分です。" } },
+  { "@type": "Question", "name": "まなびチームは勉強の習慣づくりにどう使えますか？", "acceptedAnswer": { "@type": "Answer", "text": "タイマーを10分だけ動かして終わったら記録でき、短い日も1回の記録として残ります。連続日数とトロフィーで続いた日が見え、家族コードでつなぐと家族が記録を見て応援を届けられます（つながなくても使えます）。アカウント登録は不要で、無料・広告なしです。" } }
+] }
+</script>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -103,6 +110,11 @@ a.btn:focus-visible,a.brand:focus-visible,.article a:focus-visible{outline:3px s
 footer{border-top:1px solid var(--line);padding-block:28px 40px;color:var(--muted);font-size:.85rem;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;align-items:center}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
 .crumbs{font-size:.82rem;color:var(--muted);margin-bottom:10px}.crumbs a{color:var(--accent-ink);text-decoration:none}.crumbs a:hover{text-decoration:underline}
+.faq{margin-top:44px}
+.faq h2{font-size:clamp(1.3rem,3.2vw,1.6rem)}
+.faq dl{margin:.6em 0 0}
+.faq dt{font-family:var(--display);font-weight:700;color:var(--accent-ink);margin-top:20px}
+.faq dd{margin:.4em 0 0}
 </style>
 </head>
 <body>
@@ -155,6 +167,18 @@ footer{border-top:1px solid var(--line);padding-block:28px 40px;color:var(--mute
       <p>全部を一度にやる必要はありません。まずは今日、10分だけ始めて、その記録を残すところからどうぞ。続け方は人それぞれなので、自分に合う形を少しずつ見つけていきましょう。</p>
       <p>途中で何日か止まってしまっても、それで終わりではありません。また10分から再開すれば、それも立派な続け方です。止まったことを責めるより、もう一度始めやすい形を用意しておくことが、長く続けるための近道になります。</p>
     </div>
+
+    <section class="faq">
+      <h2>よくある質問</h2>
+      <dl>
+        <dt>勉強が続かないのは、やる気や性格のせいですか？</dt>
+        <dd>かならずしもそうではありません。勉強を「がんばること」ではなく「いつもの流れ」にする工夫で、続けやすさは変わります。1日10分など小さく始め、夕ごはんのあとなど毎日かならずする行動のあとに続けると決めると、いつやるか迷う時間が減ります。</dd>
+        <dt>どのくらいの量から始めればいいですか？</dt>
+        <dd>疲れている日でもできる量にしぼるのがおすすめです。「1日10分」「問題集を1ページ」でかまいません。短くても「今日もやった」を積み重ねると、始めるハードルが下がります。物足りなくなったら少しずつ増やせば十分です。</dd>
+        <dt>まなびチームは勉強の習慣づくりにどう使えますか？</dt>
+        <dd>タイマーを10分だけ動かして終わったら記録でき、短い日も1回の記録として残ります。連続日数とトロフィーで続いた日が見え、家族コードでつなぐと家族が記録を見て応援を届けられます（つながなくても使えます）。アカウント登録は不要で、無料・広告なしです。</dd>
+      </dl>
+    </section>
 
     <p class="related">あわせて読みたい：<a href="record.html">勉強の記録が続かない人へ。かんたんなつけ方3つのコツ</a><br>あわせて読みたい：<a href="timing.html">勉強を毎日の習慣にする、時間と場所の決め方</a><br>あわせて読みたい：<a href="test.html">テスト前だけ勉強してしまう人へ。毎日少しずつの習慣に変える3つのコツ</a><br>あわせて読みたい：<a href="winter.html">冬休みの勉強計画の立て方（中学生・高校生）</a><br>あわせて読みたい：<a href="motivation.html">勉強のやる気が出ない中学生へ</a><br>あわせて読みたい：<a href="studytime.html">勉強時間は記録するべき？</a><br>ほかの読みもの：<a href="articles.html">記事の一覧を見る</a></p>
 

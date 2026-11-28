@@ -39,6 +39,13 @@
 <script type="application/ld+json">
 { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "まなびチーム", "item": "https://is-inn.github.io/manabi-lp/" }, { "@type": "ListItem", "position": 2, "name": "読みもの", "item": "https://is-inn.github.io/manabi-lp/articles.html" }, { "@type": "ListItem", "position": 3, "name": "勉強のやる気が出ない中学生へ", "item": "https://is-inn.github.io/manabi-lp/motivation.html" } ] }
 </script>
+<script type="application/ld+json">
+{ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+  { "@type": "Question", "name": "勉強のやる気が出ないのは、なまけているからですか？", "acceptedAnswer": { "@type": "Answer", "text": "いいえ。やる気は始める前より、始めたあとに出てくることが多いものです。やる気を待つより、「5分だけ」と決めて手をつけるほうが、その日の勉強を始めやすくなります。" } },
+  { "@type": "Question", "name": "やる気が出ない日は、どうやって勉強を始めればいいですか？", "acceptedAnswer": { "@type": "Answer", "text": "前の日の終わりに「明日は数学を1ページ」のようにやることを1つだけ決めておくと、机に向かったときに迷わずに始められます。終わったら記録して、できた日が見えるようにすると、次の日も続けやすくなります。" } },
+  { "@type": "Question", "name": "まなびチームはアカウント登録なしで使えますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい。アカウント登録なしで、タイマーでの記録や連続日数の表示が使えます。家族で見守りたいときだけ「家族コード」を使い、使わなければ記録は端末の中だけに残ります。無料・広告なしです。" } }
+] }
+</script>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -103,6 +110,11 @@ a.btn:focus-visible,a.brand:focus-visible,.article a:focus-visible{outline:3px s
 footer{border-top:1px solid var(--line);padding-block:28px 40px;color:var(--muted);font-size:.85rem;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;align-items:center}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
 .crumbs{font-size:.82rem;color:var(--muted);margin-bottom:10px}.crumbs a{color:var(--accent-ink);text-decoration:none}.crumbs a:hover{text-decoration:underline}
+.faq{margin-top:44px}
+.faq h2{font-size:clamp(1.3rem,3.2vw,1.6rem)}
+.faq dl{margin:.6em 0 0}
+.faq dt{font-family:var(--display);font-weight:700;color:var(--accent-ink);margin-top:20px}
+.faq dd{margin:.4em 0 0}
 </style>
 </head>
 <body>
@@ -153,6 +165,18 @@ footer{border-top:1px solid var(--line);padding-block:28px 40px;color:var(--mute
       </ol>
       <p>やる気が出ない日があるのは、だれでも同じです。やる気に頼らず「始められる仕組み」を作っておけば、少しずつでも続けられます。まずは今日、5分だけ始めてみましょう。</p>
     </div>
+
+    <section class="faq">
+      <h2>よくある質問</h2>
+      <dl>
+        <dt>勉強のやる気が出ないのは、なまけているからですか？</dt>
+        <dd>いいえ。やる気は始める前より、始めたあとに出てくることが多いものです。やる気を待つより、「5分だけ」と決めて手をつけるほうが、その日の勉強を始めやすくなります。</dd>
+        <dt>やる気が出ない日は、どうやって勉強を始めればいいですか？</dt>
+        <dd>前の日の終わりに「明日は数学を1ページ」のようにやることを1つだけ決めておくと、机に向かったときに迷わずに始められます。終わったら記録して、できた日が見えるようにすると、次の日も続けやすくなります。</dd>
+        <dt>まなびチームはアカウント登録なしで使えますか？</dt>
+        <dd>はい。アカウント登録なしで、タイマーでの記録や連続日数の表示が使えます。家族で見守りたいときだけ「家族コード」を使い、使わなければ記録は端末の中だけに残ります。無料・広告なしです。</dd>
+      </dl>
+    </section>
 
     <p class="related">あわせて読みたい：<a href="habit.html">勉強が続かない…を変える、小さな習慣づくり3つのコツ</a><br>あわせて読みたい：<a href="timing.html">勉強を毎日の習慣にする、時間と場所の決め方</a><br>あわせて読みたい：<a href="test.html">テスト前だけ勉強してしまう人へ。毎日少しずつの習慣に変える3つのコツ</a><br>あわせて読みたい：<a href="studytime.html">勉強時間は記録するべき？</a><br>あわせて読みたい：<a href="timer.html">タイマーで勉強時間を記録するコツ</a><br>あわせて読みたい：<a href="habitfail.html">勉強の習慣化ができない理由と立て直し方</a><br>ほかの読みもの：<a href="articles.html">記事の一覧を見る</a></p>
 
